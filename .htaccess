@@ -2,3 +2,6 @@ RewriteEngine on
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.html [L]
+
+RewriteCond %{REQUEST_FILENAME} \.html$ [NC]
+RewriteRule ^(.*)\.html$ /$1 [R=301,L]

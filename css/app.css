@@ -5720,9 +5720,12 @@ footer.footer--noborder {
 .slide__video iframe,
 .slide__video img {
     display: block;
-    width: auto;
+    width: auto !important;
     max-width: 100%;
     margin: 0 auto;
+}
+.slide__image img {
+    height: 100%;
 }
 .slide__image .slide__image__play,
 .slide__video .slide__image__play {

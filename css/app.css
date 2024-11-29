@@ -24,6 +24,9 @@ figure,
 main {
     display: block;
 }
+main#content {
+    width: 1830px;
+}
 figure {
     margin: 1em 40px;
 }

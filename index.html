@@ -66,7 +66,7 @@
 		}
 
 		.hp-slide .subtitle {
-			font-size: 1.25rem !important;
+			font-size: 2.1rem !important;
 		}
 
 		.hp-slide .hp-slide__link {
@@ -83,6 +83,12 @@
 
 		.hp-slide__image img {
 			object-fit: cover;
+		}
+
+		@media screen and (max-width: 768px) {
+			.desktop-only {
+				display: none;
+			}
 		}
 	</style>
 </head>
@@ -155,13 +161,13 @@
 		</div>
 	</nav>
 
-	<header>
+	<header class="desktop-only">
 		<div class="header__inner text-left text-light">
 			<h1>GAGOSIEN</h1>
 		</div>
 	</header>
 
-	<main id="content">
+	<main>
 		<section class="section--hp-slideshow"
 			style="height: 100vh; width: 100vw; position: relative; overflow: hidden;">
 			<div class="hp-slideshow-ttt" style="height: 100%; width: 100%;">
@@ -175,9 +181,9 @@
 							style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.4); z-index: 1;">
 						</div>
 
-						<img src="/images/banner/banner-2.jpg" srcset="/images/banner/banner-2.jpg 4634w,
-									 /images/banner/banner-2.jpg 2400w,
-									 /images/banner/banner-2.jpg 1200w" sizes="100vw" alt="Abstract tinted gelatin silver print of sunflowers"
+						<img src="/images/banner/banner.jpg" srcset="/images/banner/banner.jpg 4634w,
+									 /images/banner/banner.jpg 2400w,
+									 /images/banner/banner.jpg 1200w" sizes="100vw" alt="Abstract tinted gelatin silver print of sunflowers"
 							style="width: 100%; height: 100%; object-fit: cover;" />
 					</div>
 
@@ -193,7 +199,7 @@
 				</div>
 			</div>
 
-			<div class="hp-slideshow-progress">
+			<!-- <div class="hp-slideshow-progress">
 				<div class="inner">
 					<div class="progress">
 						<div>
@@ -213,7 +219,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> -->
 		</section>
 
 		<section class="section--border-top">

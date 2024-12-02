@@ -4383,6 +4383,46 @@ body {
         background: #fafafa;
     }
 }
+
+.artists-grid {
+    display: grid;
+    gap: 1rem;
+    /* Desktop: 4 columns */
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+    .artists-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Mobile landscape */
+@media screen and (max-width: 768px) {
+    .artists-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile portrait */
+@media screen and (max-width: 480px) {
+    .artists-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.artists-grid a {
+    display: block;
+    padding: 0.5rem 0;
+    text-decoration: none;
+    color: inherit;
+}
+
+.artists-grid a:hover {
+    text-decoration: underline;
+}
+
 .inner {
     width: 100%;
     max-width: 1230px;
@@ -4391,6 +4431,8 @@ body {
 }
 @media (max-width: 819px) {
     .inner {
+        width: 100%;
+        margin: 0;
         padding: 0;
     }
 }

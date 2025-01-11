@@ -835,6 +835,48 @@
         <section class="artists-list section--border-top">
             <div class="container inner">
                 <div class="artists-grid">
+                    <style>
+                        .artists-grid {
+                            display: grid;
+                            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                            gap: 1rem;
+                            padding: 1rem;
+                        }
+
+                        .artists-grid a {
+                            display: block;
+                            padding: 0.5rem;
+                            text-decoration: none;
+                            color: inherit;
+                            transition: background-color 0.2s;
+                        }
+
+                        .artists-grid a:hover {
+                            background-color: rgba(0, 0, 0, 0.05);
+                        }
+
+                        /* Mobile adjustments */
+                        @media (max-width: 768px) {
+                            .artists-grid {
+                                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                                gap: 0.5rem;
+                                padding: 0.5rem;
+                            }
+
+                            .artists-grid a {
+                                padding: 0.35rem;
+                                font-size: 0.9em;
+                            }
+                        }
+
+                        /* Small mobile adjustments */
+                        @media (max-width: 480px) {
+                            .artists-grid {
+                                grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+                            }
+                        }
+                    </style>
+
                     <a href="dan-alva.html">Dan Alva</a>
 
                     <a href="derrick-adams.html">Derrick Adams</a>
